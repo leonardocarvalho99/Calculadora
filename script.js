@@ -7,7 +7,7 @@ function calcular(tipo, valor) {
   if(tipo == 'ação') {
     
     flag = false
-    
+
     switch(valor) {
       case 'c':
         document.getElementById('display').value = ''
@@ -29,6 +29,7 @@ function calcular(tipo, valor) {
         break;
     }
     
+    document.getElementById('display').focus()
     
     if (valor == '=') {
       
@@ -64,6 +65,7 @@ function calcular(tipo, valor) {
       document.getElementById('display').value = ''
       flag = false
     }
-    document.getElementById('display').value += valor    
+    document.getElementById('display').value += valor
+    document.getElementById('display').focus()    
   }
 }
