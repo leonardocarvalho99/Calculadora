@@ -1,4 +1,4 @@
-//flag criada para saber se o último botão foi o sinal de igual ("=") para poder apagar o display e não concatená-lo
+//flag criada para saber se o último botão foi o sinal de igual ("=") para poder apagar o display e não concatená-looooo
 var flag = false
 
 // Função que vai estar inserindo os valores no display da calculadora.
