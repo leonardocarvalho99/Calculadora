@@ -29,7 +29,7 @@ function calcular(tipo, valor) {
         break;
     }
     
-    document.getElementById('display').focus()
+    document.getElementById('display').scrollLeft += 50
     
     if (valor == '=') {
       
@@ -66,6 +66,6 @@ function calcular(tipo, valor) {
       flag = false
     }
     document.getElementById('display').value += valor
-    document.getElementById('display').focus()    
+    document.getElementById('display').scrollLeft += 50 
   }
 }
