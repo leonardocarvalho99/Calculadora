@@ -13,20 +13,11 @@ function calcular(tipo, valor) {
         document.getElementById('display').value = ''
         break;
       case '+':
-        document.getElementById('display').value += valor
-        break;
       case '-':
-        document.getElementById('display').value += valor
-        break;
       case 'x':
-        document.getElementById('display').value += valor
-        break;
       case '÷':
-        document.getElementById('display').value += valor
-        break;
       case '.':
         document.getElementById('display').value += valor
-        break;
     }
     
     document.getElementById('display').scrollLeft += 50
@@ -46,7 +37,7 @@ function calcular(tipo, valor) {
         resultado = eval(resultado)
       } catch (error) {
         resultado = 'ERROR!'
-        alert('ERROR!\nCertifique-se de inserir o cálculo corretamente!\nApague e faça novamente!')
+        alert('ERROR!\nCertifique-se de inserir o cálculo correto!\nApague e faça novamente!')
       }
       
       if (resultado == Infinity) {
